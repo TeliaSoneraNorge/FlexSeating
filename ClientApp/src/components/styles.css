@@ -1,0 +1,170 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.page {
+}
+
+.page__content {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  grid-template-rows: 300px 1fr;
+  grid-gap: 10px;
+  height: 100vh;
+  margin-top: 20px;
+  padding: 80px;
+}
+
+.scroll-select {
+  background-color: #f2f2f2;
+  overflow: auto;
+}
+
+.scroll-select__title {
+  font-size: x-large;
+  text-align: center;
+  width: 100%;
+  padding: 18px 0px;
+}
+
+.scroll-select__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 28px;
+}
+
+.scroll-select__item {
+  margin: 10px;
+  background-color: white;
+  width: 128px;
+  height: 128px;
+  cursor: pointer;
+  color: darkgray;
+  position: relative;
+}
+
+.scroll-select__item--active {
+  border: 5px solid orange;
+}
+
+.navbar {
+  background-color: #f2f2f2;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  color: black;
+}
+.navbar-image {
+  height: 100%;
+}
+.navbar-element {
+  padding: 24px 0px;
+}
+
+.desk-list {
+  grid-column: 1 / 4;
+}
+
+.arrow {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.date {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 36px 1fr 36px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.date__text {
+}
+
+.building {
+  display: grid;
+  grid-template-rows: 25px 1fr 25px;
+  height: 186px;
+  width: 186px;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background-color: #666666;
+  margin: 10px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-blend-mode: multiply;
+}
+
+.floor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+
+.reserve {
+  background-color: white;
+  margin: 12px;
+  width: 64px;
+  display: grid;
+  grid-template-rows: 1fr 28px;
+}
+.reserve-button {
+  background-color: #00cc66;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reserve--reserved {
+  background-color: red;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reserve-button:hover {
+  cursor: pointer;
+  background-color: #99ff64;
+}
+.reserve--reserved:hover {
+  cursor: pointer;
+  background-color: lightcoral;
+}
+.reserve--unclickable:hover {
+  background-color: red;
+}
+.reserve--unclickable {
+  cursor: default;
+}
+.reserve-number {
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-element__account {
+  text-align: right;
+  padding-right: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
